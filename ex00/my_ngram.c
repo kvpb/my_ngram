@@ -20,7 +20,7 @@ int main(int argc, char* argv[]){
         fill_array(&array[0], argv[index]);
     }
     for (index = 0; index < array_size; index++){
-        if (array[index] != '"' && array[index] > 0){
+        if (index != '"' && array[index] > 0){
             printf("%c:%d\n", index, array[index]);
         }
     }
